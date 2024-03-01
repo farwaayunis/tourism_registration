@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="video-background">
+        <div class="video-wrap">
+            <!-- Embed your video here -->
+            <video autoplay loop muted playsinline>
+              <source src="video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+        </div>
+    </div>
+
+   <div class="form-wrapper">
+<div class="form-container">
+   <form>
+        <table >
+         
+          <tr>
+            <td class="label-column"><label for="">Full Name*:</label></td>
+            <td class="input-column"><input type="text" name="first_name" placeholder="FirstName  LastName"></td></tr>
+          <tr>
+         <td class="label-column"><label for="">Email*</label> </td>
+        <td class="input-column"><input type="text" name="last_name" placeholder="Email_Address"></td>
+          </tr>
+
+          <tr>
+            <td class="label-column"><label for="">Tour Packages*</label></td>
+            <td class="input-column" colspan="2"><select name="t_packages" id="tour_packages">
+        
+                <optgroup label="India">
+         
+                 <option value="Delhi">Delhi</option>
+                 <option selected value="Goa">Goa</option>
+                 <option value="Calcutta"></option> 
+         
+                </optgroup>
+         
+                <optgroup label="France">
+         
+                 <option value="Spain">Spain</option>
+                 <option value="Bordeaux">Bordeaux</option>
+         
+                </optgroup>
+         
+           </select></td></tr>
+          
+           <tr>
+            <td class="label-column"> <label for="arrival date">Arrival Date*</label></td>
+            <td class="input-column" colspan="3"><input type="date" name="arrival_date" id="arrival_date" placeholder="m/d/y" style="width:100px; height:100px; border-radius: 5px;border-color: rgb(43, 213, 43); box-shadow:2px 2px 2px 2px rgb(2, 241, 2);"><br>
+            </td>
+        </tr>
+          </table>
+          </form>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-container">
+          <form action="home.html" method="post" >
+            <table >
+          <tr>
+            <td class="label-column"><label for="no_of_persons">Number of Persons*</label></td>
+            <td class="input-column"><input type="number" name="no_of_persons" id="no_of_persons" placeholder="UNKNOWN_TYPE"></td></tr>
+            <tr><td class="label-column"><label for="options">What would you want to avail?*</label></td>
+            <td class="input-column">
+                Boarding <input type="checkbox" name="Boarding"><br>
+                Fooding<input type="checkbox" name="fooding"><br>
+                Site Seeing<input type="checkbox" name="site-seeing"><br>
+
+            </td>
+          </tr>
+          <tr>
+            <td class="label-column"><label for="discount">Discount Coupon Code*</label></td>
+            <td class="input-column"><input type="text" name="coupon" placeholder="UNKNOWN_TYPE"></td></tr><tr>
+            <td class="label-column"><label for="conditions">Terms and Conditions*</label><br>
+            </td>
+            <td class="input-column"><input type="radio" name="yes" id="agree">I agree <input type="radio" name="no" id="disagree"> I disagree
+            </td>
+          </tr>
+          <tr><td colspan="2" >
+          <input type="submit" value="Complete Reservation"></tr></td>
+        </table>
+    </form>
+     
+</div>
+</div>
+</body>
+</html>
